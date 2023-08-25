@@ -4,15 +4,26 @@
     $lenguaje = "en PHP"; //Imprimir en consola
     echo $saludo . ", " . $lenguaje; //Concatenar con "."
     
-    echo "\n";
     //Tipos de datos escalares
+    echo "\nTipos de datos escalares\n";
+
     $integer = 10; //Integer
     $float = 2.5;
     $string = "Palabra";
     $boolean = true;
-    echo $integer . " - ". gettype($integer) . "\n";
-    echo $float . " - ". gettype($float) . "\n";
-    echo $string . " - ". gettype($string) . "\n";
-    echo $boolean . " - ". gettype($boolean) . "\n";
-    //Prueba
+    echo "\t". $integer . " - ". gettype($integer) . "\n";
+    echo "\t". $float . " - ". gettype($float) . "\n";
+    echo "\t". $string . " - ". gettype($string) . "\n";
+    echo "\t". $boolean . " - ". gettype($boolean);
+    
+    //Tipos de datos compuestos
+    echo "\nTipos de datos compuestos\n";
+    $array = [$integer, $float, $string];
+    echo gettype ($array) . "\n";
+    for ($i = 0; $i < 3; $i++){
+        echo "\t[". $i . "] => ". $array[$i] . "\n";
+    }
+    echo "Añadiendo un elemento booleando\n";
+    array_push($array, $boolean); //Array, elemento a añadir
+    print_r ($array);
 ?> 
