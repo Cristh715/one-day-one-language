@@ -31,6 +31,6 @@
     print_r ($array);//Forma de imprimir array
 
     //Diccionarios
-    $diccionario = array("integer" => $integer
-        );
+    $diccionario = array("integer" => $integer, "string" => $string);
+    print_r($diccionario);
 ?> 
