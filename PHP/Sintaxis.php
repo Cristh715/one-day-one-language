@@ -3,10 +3,10 @@
     $lenguaje = "en ";
     //Constante
     const CONSTANTE = "PHP";
+
     //Imprimir en consola
     echo $saludo . ", " . $lenguaje . CONSTANTE; //Concatenar con "."
     
-
     //Tipos de datos escalares
     echo "\nTipos de datos escalares\n";
 
@@ -29,4 +29,8 @@
     echo "Añadiendo un elemento booleando\n";
     array_push($array, $boolean); //Array, elemento a añadir
     print_r ($array);//Forma de imprimir array
+
+    //Diccionarios
+    $diccionario = array("integer" => $integer
+        );
 ?> 
