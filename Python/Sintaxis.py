@@ -4,8 +4,14 @@ print(saludo, ' mundo') #Concatenando en salida de dato, usando print.
 
 # Declaración e ingreso de datos
 i, j = 0, 4 #Asignación multiple de variables
-num = input ("Digite el valor de num: \n -> ")
+num = int(input ("Digite el valor de num: \n -> "))
 
 # Condicionales
 if i == 0 or j==5: #Operadores booleanos and - or
     print ("Hola, el valor de num es ", num)
+
+cont = num
+
+while cont < 5:
+    print (cont, "\n")
+    cont += 1
